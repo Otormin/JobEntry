@@ -49,39 +49,82 @@ $recruiterId = $_GET['recruiterId'];
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-            <a href="Homepage.php" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                <h1 class="m-0 text-primary">JobEntry</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="Homepage.php" class="nav-item nav-link">Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="job-list-allJobs.php" class="dropdown-item">All Jobs</a>
-                            <a href="job-list-marketing.php" class="dropdown-item">Marketing</a>
-                            <a href="job-list-customerService.php" class="dropdown-item">Customer Service</a>
-                            <a href="job-list-humanResources.php" class="dropdown-item">Human Resources</a>
-                            <a href="job-list-projectManagement.php" class="dropdown-item">Project Management</a>
-                            <a href="job-list-businessDevelopment.php" class="dropdown-item">Business Development</a>
-                            <a href="job-list-salesAndCommunication.php" class="dropdown-item">Sales and Communication</a>
-                            <a href="job-list-teachingAndEducation.php" class="dropdown-item">Teaching and Education</a>
-                            <a href="job-list-designAndCreative.php" class="dropdown-item">Design and Creative</a>
-                            <a href="job-list-others.php" class="dropdown-item">Others</a>
+        <?php
+            if(!isset($_SESSION['role'])){
+        ?>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+                    <a href="Homepage.php" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                        <h1 class="m-0 text-primary">JobEntry</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto p-4 p-lg-0">
+                            <a href="Homepage.php" class="nav-item nav-link">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="job-list-allJobs.php" class="dropdown-item">All Jobs</a>
+                                    <a href="job-list-marketing.php" class="dropdown-item">Marketing</a>
+                                    <a href="job-list-customerService.php" class="dropdown-item">Customer Service</a>
+                                    <a href="job-list-humanResources.php" class="dropdown-item">Human Resources</a>
+                                    <a href="job-list-projectManagement.php" class="dropdown-item">Project Management</a>
+                                    <a href="job-list-businessDevelopment.php" class="dropdown-item">Business Development</a>
+                                    <a href="job-list-salesAndCommunication.php" class="dropdown-item">Sales and Communication</a>
+                                    <a href="job-list-teachingAndEducation.php" class="dropdown-item">Teaching and Education</a>
+                                    <a href="job-list-designAndCreative.php" class="dropdown-item">Design and Creative</a>
+                                    <a href="job-list-others.php" class="dropdown-item">Others</a>
+                                </div>
+                            </div>
+                            <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
+                            <a href="Posts.php" class="nav-item nav-link">Posts</a>
+                            <a href="About.php" class="nav-item nav-link active">About</a>
+                            <a href="Contact.php" class="nav-item nav-link">Contact</a>
                         </div>
+                        <a href="Index.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
-                    <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
-                    <a href="Posts.php" class="nav-item nav-link">Posts</a>
-                    <a href="About.php" class="nav-item nav-link">About</a>
-                    <a href="Contact.php" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="Profile.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Profile<i class="fa fa-arrow-right ms-3"></i></a>
-            </div>
-        </nav>
+                </nav>
+        <?php
+            }
+            else{
+        ?>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+                    <a href="Homepage.php" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                        <h1 class="m-0 text-primary">JobEntry</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto p-4 p-lg-0">
+                            <a href="Homepage.php" class="nav-item nav-link">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="job-list-allJobs.php" class="dropdown-item">All Jobs</a>
+                                    <a href="job-list-marketing.php" class="dropdown-item">Marketing</a>
+                                    <a href="job-list-customerService.php" class="dropdown-item">Customer Service</a>
+                                    <a href="job-list-humanResources.php" class="dropdown-item">Human Resources</a>
+                                    <a href="job-list-projectManagement.php" class="dropdown-item">Project Management</a>
+                                    <a href="job-list-businessDevelopment.php" class="dropdown-item">Business Development</a>
+                                    <a href="job-list-salesAndCommunication.php" class="dropdown-item">Sales and Communication</a>
+                                    <a href="job-list-teachingAndEducation.php" class="dropdown-item">Teaching and Education</a>
+                                    <a href="job-list-designAndCreative.php" class="dropdown-item">Design and Creative</a>
+                                    <a href="job-list-others.php" class="dropdown-item">Others</a>
+                                </div>
+                            </div>
+                            <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
+                            <a href="Posts.php" class="nav-item nav-link">Posts</a>
+                            <a href="About.php" class="nav-item nav-link active">About</a>
+                            <a href="Contact.php" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <a href="Profile.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Profile<i class="fa fa-arrow-right ms-3"></i></a>
+                    </div>
+                </nav>
+        <?php
+            }
+        ?>
         <!-- Navbar End -->
 
 

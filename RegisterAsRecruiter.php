@@ -84,7 +84,7 @@
 <body>
     <div class="container">
         <h1>Register</h1>
-        <form method="post" action="./RecruiterRegisterAccount.php" enctype="multipart/form-data">
+        <form id="registerForm" method="post" action="./RecruiterRegisterAccount.php" enctype="multipart/form-data">
             <input type="text" name="cName" id="cName" placeholder="Company Name" required>
             <textarea name="cDetail" id="cDetail" placeholder="Company Detail" rows="5" cols="10" required></textarea>
             <input type="text" name="cLocation" id="cLocation" placeholder="Company Location" required>
