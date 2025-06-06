@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2025 at 08:34 PM
+-- Generation Time: Jun 07, 2025 at 12:20 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -76,8 +76,7 @@ CREATE TABLE `jobs` (
 
 INSERT INTO `jobs` (`jobId`, `recruiterId`, `jobTitle`, `jobNature`, `pay`, `jobDescription`, `jobResponsibility`, `jobQualification`, `dateLine`, `jobLocation`, `jobCategory`, `isAvailable`, `creationDate`) VALUES
 (1, 1, 'Teacher', 'Part Time', 10000, 'Teach university students', 'Teach over 200 university students', 'Phd in Education', '2025-02-02', 'Lagos state', 'Teaching and Education', 1, '2024-11-28'),
-(2, 1, 'Artist', 'Full Time', 300, 'Draw the faces of people', 'Collect money from customers', 'Have drawing skill', '2027-03-03', 'Ogun state', 'Design and Creative', 1, '2024-11-28'),
-(3, 1, 'Touching little boys', 'Full Time', 3000, 'touch loye setemi', 'Touch loye daily', 'sertified boy toucher', '2025-02-06', 'Bacock', 'Others', 1, '2025-02-19');
+(2, 1, 'Artist', 'Full Time', 300, 'Draw the faces of people', 'Collect money from customers', 'Have drawing skill', '2027-03-03', 'Ogun state', 'Design and Creative', 1, '2024-11-28');
 
 -- --------------------------------------------------------
 

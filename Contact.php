@@ -10,7 +10,7 @@ session_start();
 
 <head>
     <meta charset="utf-8">
-    <title>FarmConnect - Contact us</title>
+    <title>JobEntry - Contact us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -69,8 +69,8 @@ session_start();
                             </div>
                             <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
                             <a href="Posts.php" class="nav-item nav-link">Posts</a>
-                            <a href="About.php" class="nav-item nav-link active">About</a>
-                            <a href="Contact.php" class="nav-item nav-link">Contact</a>
+                            <a href="About.php" class="nav-item nav-link">About</a>
+                            <a href="Contact.php" class="nav-item nav-link active">Contact</a>
                         </div>
                         <a href="Index.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
@@ -106,8 +106,8 @@ session_start();
                             </div>
                             <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
                             <a href="Posts.php" class="nav-item nav-link">Posts</a>
-                            <a href="About.php" class="nav-item nav-link active">About</a>
-                            <a href="Contact.php" class="nav-item nav-link">Contact</a>
+                            <a href="About.php" class="nav-item nav-link">About</a>
+                            <a href="Contact.php" class="nav-item nav-link active">Contact</a>
                         </div>
                         <a href="Profile.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Profile<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>

@@ -1,5 +1,8 @@
 <?php
-    include 'connect.php';
+include 'connect.php';
+
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +66,7 @@
                         <div class="navbar-nav ms-auto p-4 p-lg-0">
                             <a href="Homepage.php" class="nav-item nav-link">Home</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Jobs</a>
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="job-list-allJobs.php" class="dropdown-item">All Jobs</a>
                                     <a href="job-list-marketing.php" class="dropdown-item">Marketing</a>
@@ -79,7 +82,7 @@
                             </div>
                             <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
                             <a href="Posts.php" class="nav-item nav-link">Posts</a>
-                            <a href="About.php" class="nav-item nav-link active">About</a>
+                            <a href="About.php" class="nav-item nav-link">About</a>
                             <a href="Contact.php" class="nav-item nav-link">Contact</a>
                         </div>
                         <a href="Index.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i></a>
@@ -100,7 +103,7 @@
                         <div class="navbar-nav ms-auto p-4 p-lg-0">
                             <a href="Homepage.php" class="nav-item nav-link">Home</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Jobs</a>
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="job-list-allJobs.php" class="dropdown-item">All Jobs</a>
                                     <a href="job-list-marketing.php" class="dropdown-item">Marketing</a>
@@ -116,7 +119,7 @@
                             </div>
                             <a href="Recruiters.php" class="nav-item nav-link">Recruiters</a>
                             <a href="Posts.php" class="nav-item nav-link">Posts</a>
-                            <a href="About.php" class="nav-item nav-link active">About</a>
+                            <a href="About.php" class="nav-item nav-link">About</a>
                             <a href="Contact.php" class="nav-item nav-link">Contact</a>
                         </div>
                         <a href="Profile.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Profile<i class="fa fa-arrow-right ms-3"></i></a>
